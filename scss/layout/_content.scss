@@ -4,3 +4,79 @@ Content
 .app-loading {
   display: none;
 }
+.body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+.section-featured {
+  .main-content {
+    .aside-menu {
+      display: none;
+    }
+
+    @include media-breakpoint-up(lg) {
+      @include flexbox;
+      .content {
+        @include flex(1);
+      }
+      .aside-menu {
+        display: block;
+        width: 270px;
+        margin-right: 30px;
+      }
+    }
+  }
+}
+
+
+.content {
+  .box {
+    .title-nav {
+      padding: 14px;
+      background-color: #f2f2f2;
+      position: relative;
+      margin-bottom: 28px;
+      &:after {
+        position: absolute;
+        content: '';
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        height: 3px;
+        background-color: #767676;
+      }
+      .title-text  {
+        a {
+          text-decoration: none;
+          span{
+            @include font-size(18px);
+            color: #333333;
+            font-weight: bold;
+          }
+        }
+        &:after {
+          position: absolute;
+          content: '';
+          width: 30%;
+          @include media-breakpoint-up(lg) {
+            width: 13%;
+          }
+          left: 0;
+          bottom: 0;
+          right: 0;
+          height: 3px;
+          background-color: $primary;
+          z-index: 1;
+        }
+      }
+
+
+
+
+    }
+  }
+}
+
+

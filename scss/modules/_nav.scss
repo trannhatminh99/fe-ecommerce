@@ -1,0 +1,36 @@
+.section-nav {
+  margin: 20px 0;
+  .title-nav {
+    background-color: #dcdcdc;
+    padding: 0;
+    @include flexbox;
+    list-style: none;
+    li {
+      &+ li {
+        &:before{
+          content: "\f192";
+          font-family: "Font Awesome 5 Free";
+          margin-right: 16px;
+          margin-top: auto;
+          margin-bottom: auto;
+          color: #afafaf;
+          @include font-size(7px);
+        }
+      }
+
+      margin-top: 3px;
+      margin-bottom: 3px;
+      margin-left: 16px;
+      @include font-size(14px);
+      font-weight: 500;
+      &:first-child {
+        a {
+          color: #333;
+        }
+      }
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+}

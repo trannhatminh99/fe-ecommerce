@@ -1,4 +1,4 @@
-# [Frontend Seed 4](https://github.com/trungnghia112/frontend-seed-4)
+# [Đại dương](https://github.com/trungnghia112/frontend-seed-4)
 
 This template features predefined file paths for Bootstrap 4 and jQuery, so you can quickly create Bootstrap websites.
 

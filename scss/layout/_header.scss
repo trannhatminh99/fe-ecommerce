@@ -1,3 +1,74 @@
 /* ==========================================================================
 Header
 ========================================================================== */
+.header-top {
+  .navbar-brand-logo {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .navbar {
+    padding-top:0;
+    padding-bottom: 0;
+  }
+  @include media-breakpoint-up(lg) {
+    background-image: url('/images/bg-header.png');
+    .input-group {
+      margin-left: 30px;
+      max-width: 500px;
+    }
+    .navbar-info {
+      @include flexbox;
+
+      i {
+        margin-top: auto;
+        margin-bottom: auto;
+        @include font-size(38px);
+        color: $primary;
+      }
+
+      .navbar-info-phone {
+        margin-left: 6px;
+        @include flexbox;
+        @include flex-direction(column);
+        span {
+          @include font-size(14px);
+          color: $primary;
+          font-weight: bold;
+        }
+        a {
+          color: #333;
+          @include font-size(20px);
+          line-height: 1;
+        }
+      }
+    }
+  }
+}
+.header-navbar {
+  background-color: $primary;
+  .navbar-toggler-sidebar {
+    color: $white;
+  }
+  .nav {
+    display: none;
+    @include media-breakpoint-up(lg) {
+      @include flexbox;
+      .nav-link {
+        color: $white;
+        @include font-size(15px);
+        line-height: 35px;
+        font-weight: bold;
+        padding: 10px 25px;
+      }
+      .nav-item {
+        @include hover-focus-active {
+          background-color: #3d8c40;
+        }
+        .active {
+          background-color: #3d8c40;
+        }
+      }
+    }
+  }
+
+}

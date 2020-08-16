@@ -1,6 +1,6 @@
 /*!--------------------------------------------------------------------------------
 
-    Theme Name: Frontend Seed 4
+    Theme Name: Đại dương
     Author:     trungnghia112 <trungnghia112@gmail.com>
 
 -----------------------------------------------------------------------------------*/
@@ -30,12 +30,18 @@
 @import 'partials/fonts';
 @import 'partials/icons';
 @import 'partials/scrollbar-measure';
+@import 'partials/blocks/blocks';
+@import 'partials/blocks/layout-1';
+@import 'partials/pagination';
 //
 // =Modules
 // --------------------------------------------------
 //@import "modules/facebook-responsive";
 //@import "modules/IconHoverEffects";
 @import 'modules/list';
+@import 'modules/menu';
+@import 'modules/aside-menu';
+@import 'modules/nav';
 //
 // =Layout
 // --------------------------------------------------
@@ -46,3 +52,4 @@
 // =Pages
 // --------------------------------------------------
 @import 'pages/home';
+@import 'pages/detail';

@@ -1,0 +1,28 @@
+.block-layout-1 {
+  .card {
+    .card-img {
+      width: 120px;
+      height: 120px;
+    }
+    .card-body {
+      .card-title {
+        margin-top: 12px;
+        color: #333;
+        font-weight: bold;
+        @include hover-focus-active {
+          color: $primary;
+        }
+      }
+      .btn {
+        @include font-size(14px);
+        font-weight: 400;
+        padding: 0;
+        @include hover-focus-active{
+          color: $primary;
+        }
+      }
+    }
+
+
+  }
+}

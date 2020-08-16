@@ -1,6 +1,6 @@
 /*!--------------------------------------------------------------------------------
 
- Theme Name: Frontend Seed 4
+ Theme Name: Đại dương
  Author:     trungnghia112 <trungnghia112@gmail.com>
 
  -----------------------------------------------------------------------------------*/
@@ -51,10 +51,22 @@ if (Modernizr.touch === true && $(window).width() <= 767) {
       event.preventDefault();
     });
   }
+  function toggleAside() {
+    $('.js-toggleAside').on('click', function() {
+      $('body').toggleClass('active-toggleAside')
+    })
+  }
+  function closetoggleAside() {
+    $('.js-close-toggleAside').on('click', function() {
+      $('body').removeClass('active-toggleAside');
+    })
+  }
 
   function init() {
     scrollToAnchor();
     getBarwidth();
+    toggleAside();
+    closetoggleAside();
   }
 
   $(document).ready(function () {
